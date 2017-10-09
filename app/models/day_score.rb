@@ -1,0 +1,2 @@
+class DayScore < ApplicationRecord
+end

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Day:</strong>
+  <%= @day_score.day %>
+</p>
+
+<p>
+  <strong>Tension:</strong>
+  <%= @day_score.tension %>
+</p>
+
+<p>
+  <strong>Sleep:</strong>
+  <%= @day_score.sleep %>
+</p>
+
+<%= link_to 'Edit', edit_day_score_path(@day_score) %> |
+<%= link_to 'Back', day_scores_path %>

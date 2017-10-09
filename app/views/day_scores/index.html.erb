@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Day Scores</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Day</th>
+      <th>Tension</th>
+      <th>Sleep</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @day_scores.each do |day_score| %>
+      <tr>
+        <td><%= day_score.day %></td>
+        <td><%= day_score.tension %></td>
+        <td><%= day_score.sleep %></td>
+        <td><%= link_to 'Show', day_score %></td>
+        <td><%= link_to 'Edit', edit_day_score_path(day_score) %></td>
+        <td><%= link_to 'Destroy', day_score, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Day Score', new_day_score_path %>
