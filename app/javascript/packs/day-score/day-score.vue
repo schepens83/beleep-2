@@ -49,7 +49,8 @@ export default {
     return {
       day_scores: [],
       score: {
-        day: this.$moment().format('YYYY-MM-DD'),
+        day: '',
+        // this.$moment().format('YYYY-MM-DD'),
         tension: '',
         sleep: ''
       },
