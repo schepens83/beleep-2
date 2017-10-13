@@ -110,6 +110,7 @@ export default {
     })
 
     this.score.day = this.$moment().format('YYYY-MM-DD');
+    this.score.day = this.$moment().format('YYYY-MM-DD');
   }
 }
 </script>
