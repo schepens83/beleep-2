@@ -1,6 +1,8 @@
 import Vue from 'vue/dist/vue.esm'
-// import moment from 'moment'
 import DayScore from './day-score/day-score.vue'
+
+import moment from 'moment';
+Vue.prototype.$moment = moment
 
 
 document.addEventListener('DOMContentLoaded', () => {
