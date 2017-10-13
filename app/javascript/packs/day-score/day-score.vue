@@ -50,7 +50,7 @@ export default {
       day_scores: [],
       score: {
         // day: '',
-        day: this.$moment().format('YYYY-MM-DD'),
+        day: '',
         tension: '',
         sleep: ''
       },
@@ -108,6 +108,8 @@ export default {
         that.day_scores = res
       }
     })
+
+    this.score.day = this.$moment().format('YYYY-MM-DD');
   }
 }
 </script>
