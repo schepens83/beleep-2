@@ -1,5 +1,5 @@
 import Vue from 'vue/dist/vue.esm'
-import moment from 'moment'
+// import moment from 'moment'
 import DayScore from './day-score/day-score.vue'
 
 
