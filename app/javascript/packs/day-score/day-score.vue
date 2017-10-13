@@ -41,7 +41,7 @@
 
 
 <script>
-// import moment from 'moment'
+import moment from 'moment'
 import DayScoreRow from './day-score-row.vue'
 
 export default {
@@ -49,8 +49,7 @@ export default {
     return {
       day_scores: [],
       score: {
-        day: '',
-        // moment().format('YYYY-MM-DD'),
+        day: moment().format('YYYY-MM-DD'),
         tension: '',
         sleep: ''
       },
