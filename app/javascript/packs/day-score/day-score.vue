@@ -1,5 +1,3 @@
-
-
 <template>
   <div class="row">
     <h1>Day Scores</h1>
@@ -8,7 +6,7 @@
       <table class="table table-condensed">
         <thead>
           <tr>
-            <th>Date</th>
+            <th id="d-date">Date</th>
             <th>Tension</th>
             <th>Sleep</th>
             <th>Action</th>
@@ -109,7 +107,6 @@ export default {
       }
     })
 
-    this.score.day = this.$moment().format('YYYY-MM-DD');
     this.score.day = this.$moment().format('YYYY-MM-DD');
   }
 }
