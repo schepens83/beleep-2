@@ -13,21 +13,21 @@
 
     <td>
       <div v-if="editMode">
-        <input type="range" min="0" max="10" v-model="score.tension" @keydown.enter="updateScore"><div class="score-nrs">{{ score.tension }}</div><br>
+        <input type="range" min="0" max="100" v-model="score.tension" @keydown.enter="updateScore"><div class="score-nrs">{{ score.tension }}</div><br>
         <span style="color:red">{{ tension_error }}</span>
       </div>
       <div @click="editModeOn" v-else>
-        <div class="score-nrs">{{ score.tension }}</div>
+        <div class="score-nrs">{{ parseInt(score.tension) }}</div>
       </div>
     </td>
 
     <td>
       <div v-if="editMode">
-        <input type="range" min="0" max="10" v-model="score.sleep" @keydown.enter="updateScore"><div class="score-nrs">{{ score.sleep }}</div><br>
+        <input type="range" min="0" max="100" v-model="score.sleep" @keydown.enter="updateScore"><div class="score-nrs">{{ score.sleep }}</div><br>
         <span style="color:red">{{ sleep_error }}</span>
       </div>
       <div @click="editModeOn" v-else>
-        <div class="score-nrs">{{ score.sleep }}</div>
+        <div class="score-nrs">{{ parseInt(score.sleep) }}</div>
       </div>
     </td>
 
